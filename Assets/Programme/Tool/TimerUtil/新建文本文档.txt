@@ -1,0 +1,3 @@
+Constant ¿Ô√Êº”
+
+    public static string STR_STATIC_INSTANCE_NAME = "_StaticInstance";
