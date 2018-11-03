@@ -95,7 +95,7 @@ public class KinectManager : MonoBehaviour
 	[Tooltip("Set of joint smoothing parameters.")]
 	public Smoothing smoothing = Smoothing.Default;
 	
-	[Tooltip("Whether to apply the bone orientation constraints.")]
+	[Tooltip("Whether to apply the bone c constraints.")]
 	public bool useBoneOrientationConstraints = false;
 	//public bool useBoneOrientationsFilter = false;
 

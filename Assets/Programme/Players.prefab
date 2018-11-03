@@ -767,13 +767,14 @@ GameObject:
   - component: {fileID: 4992193896181664}
   - component: {fileID: 95394017517521106}
   - component: {fileID: 136421460551375672}
+  - component: {fileID: 114131287130518940}
   m_Layer: 0
   m_Name: KadukiRedHairPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1323572341304786
 GameObject:
   m_ObjectHideFlags: 1
@@ -1840,6 +1841,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4713930251136336}
+  - component: {fileID: 114623635963281774}
   m_Layer: 0
   m_Name: Players
   m_TagString: Player
@@ -4973,6 +4975,34 @@ MonoBehaviour:
   flipLeftRight: 0
   verticalOffset: 0
   forwardOffset: 0
+--- !u!114 &114131287130518940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1322828625750758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c52c07402f7274cab64e484b1bddc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIndex: 2
+  mirroredMovement: 1
+  verticalMovement: 1
+  externalRootMotion: 0
+  externalHeadRotation: 0
+  fingerOrientations: 0
+  moveRate: 4
+  smoothFactor: 10
+  offsetNode: {fileID: 0}
+  posRelativeToCamera: {fileID: 0}
+  posRelOverlayColor: 0
+  posRelInvertedZ: 0
+  groundedFeet: 0
+  applyMuscleLimits: 0
+  flipLeftRight: 0
+  verticalOffset: 0
+  forwardOffset: 0
 --- !u!114 &114479134030389798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5001,6 +5031,21 @@ MonoBehaviour:
   flipLeftRight: 0
   verticalOffset: 0
   forwardOffset: 0
+--- !u!114 &114623635963281774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767246134323006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75fcdcad758dd54ea5d1948e3d1c4b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Players:
+  - {fileID: 4037941797525626}
+  - {fileID: 4598570295509474}
+  - {fileID: 4992193896181664}
 --- !u!114 &114678259502990874
 MonoBehaviour:
   m_ObjectHideFlags: 1
