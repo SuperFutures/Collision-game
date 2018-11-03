@@ -13,6 +13,7 @@ public class GameControll : MonoBehaviour
     public List<FallBallControll> FallBallControll = new List<FallBallControll>();
 
     public GameObject BallParent;
+    public GameObject BombParent;
 
     private float _timer = 0;
     private float _timer0 = 0;
@@ -99,6 +100,7 @@ public class GameControll : MonoBehaviour
         {
             int index = Random.Range(0, BombPrefabs.Length);
             var Bomb = Instantiate(BombPrefabs[index]);
+            Bomb.transform.SetParent(BombParent.transform);
             var BombControll = Bomb.GetComponent<BombControll>();
             if (BombControll)
             {

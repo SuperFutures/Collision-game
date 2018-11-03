@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FallBallControll : MonoBehaviour
 {
-    public AudioClip GetCoin;
-
+    public AudioSource GetCoin;
+    
 
 
 
@@ -13,12 +13,12 @@ public class FallBallControll : MonoBehaviour
     void Awake()
     {
         Physics.IgnoreLayerCollision(9, 9);
-        GameControll game = new GameControll();
+
     }
 
     void Start()
     {
-
+        GetCoin = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -48,13 +48,14 @@ public class FallBallControll : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            GetCoin.Play();
             StartCoroutine(Delay());
         }
     }
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.6f);
         Destroy(gameObject);
     }
 
@@ -64,7 +65,12 @@ public class FallBallControll : MonoBehaviour
     {
         int x = Random.Range(-9, 9);
         float z = Random.Range(-1f, 1f);
-        transform.localPosition = new Vector3(x, 0, z);
+        transform.localPosition = new Vector3(x, 0, 0);
 
+    }
+
+    public void GetCoinSound()
+    {
+        GetCoin.Play();
     }
 }
